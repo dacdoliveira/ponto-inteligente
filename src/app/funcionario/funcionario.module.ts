@@ -14,7 +14,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
-//import { MatPaginatorIntl } from '@angular/material/paginator';
+import { MatPaginatorIntl } from '@angular/material/paginator';
 
 import { 
   ListagemComponent, 
@@ -24,8 +24,8 @@ import {
 
 import {
   HttpUtilService,
-  LancamentoService//,
- // PtBrMatPaginatorIntl
+  LancamentoService,
+  PtBrMatPaginatorIntl
 } from '../shared';
 
 
@@ -56,8 +56,8 @@ import {
   ],
   providers: [
     HttpUtilService,
-    LancamentoService//,
-   //{ provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
+    LancamentoService,
+    { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
   ]
 })
 export class FuncionarioModule { }

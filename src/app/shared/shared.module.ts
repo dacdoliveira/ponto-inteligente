@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MascaraDirective } from './directives/mascara.directive';
 
 import { MatPaginatorIntl } from '@angular/material/paginator';
-//import { PtBrMatPaginatorIntl } from './';
+import { PtBrMatPaginatorIntl } from './';
 
 
 
@@ -16,9 +16,9 @@ import { MatPaginatorIntl } from '@angular/material/paginator';
   ],
   exports:[
     MascaraDirective
-  ]//,
- // providers: [
-   // PtBrMatPaginatorIntl
-  //]
+  ],
+  providers: [
+    PtBrMatPaginatorIntl
+  ]
 })
 export class SharedModule { }
